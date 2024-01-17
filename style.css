@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Agbalumo', system-ui;
@@ -104,7 +105,7 @@ height: 629px;
 left: 0px;
 
 }
-#activities {
+section {
     margin-left: 100px;
 }
 #activities-boxes {
