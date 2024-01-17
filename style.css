@@ -19,12 +19,20 @@ body {
     font-weight: bold;
 }
 .btn-secondary {
+    font-size: 20px;
+    line-height: 2rem;
     background: #F5F7FB;
     font-weight: bold;
-    width: 285px;
     height: 64;
+    width: 300px;
+    margin-right: 10px;
+    align-items: center;
     text-align: center;
-    justify-content: center;
+}
+.btn-secondary:hover {
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    transform: translateY(-1px);
 }
 #navbar {
     display: flex;
@@ -97,7 +105,7 @@ left: 0px;
 
 }
 #activities {
-    margin-left: 119px;
+    margin-left: 100px;
 }
 #activities-boxes {
     margin-top: 18px;
@@ -111,6 +119,7 @@ left: 0px;
     margin-left: 20px;*/
     display: flex;
     justify-content: space-evenly;
-    padding: 10px;
+    margin-right: 10px;
     margin-bottom: 18px;
+    
 }
