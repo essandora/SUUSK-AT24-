@@ -8,7 +8,10 @@ body {
     font-family: 'Agbalumo', system-ui;
     font-family: 'Montserrat', sans-serif;
 }
-
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
 /*btn*/
 .btn {
     display: inline-block;
@@ -28,10 +31,16 @@ body {
     line-height: 2rem;
     background: #F5F7FB;
     font-weight: 600;
-    height: 64;
+    height: 64px;
     width: 300px;
     align-items: center;
     text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.btn-secondary:hover {
+        box-shadow: 0 30px 10px -30px #9c9c9c;    
+
 }
 
 .btn-more {
@@ -40,10 +49,10 @@ body {
     border-color: black;
     border-width: 1px;
 }
-.btn-more:hover {
+/*.btn-more:hover {
     box-shadow: 2px 4px 4px  rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease;
-}
+    transition: box-shadow 1s ease;
+}*/
 /*navbar*/
 #navbar {
     display: flex;
@@ -92,6 +101,7 @@ body {
     height: 100%;
 }
 
+/*  headings */
 .l-heading {
     font-weight: 700;
     font-size: 3rem;
@@ -131,8 +141,8 @@ pointer-events: none;
     margin-left: 200px;
     margin-right: 200px;
     margin-bottom: 20px;
+    justify-content: space-between;
 }
-
 .container {
     text-align: center;
 }
@@ -140,41 +150,22 @@ pointer-events: none;
     margin-bottom: 18px;
 }
 .img_container img {
-    width: 340px; /* Set the desired width */
-    height: 340px; /* Set the desired height */
-    margin-bottom: 10px; /* Adjust the spacing between image and button */
-    border-radius: 8px; /* Optional: Add rounded corners to the images */
+    width: 340px; 
+    height: 340px; 
+    margin-bottom: 10px; 
+    border-radius: 8px; 
 }
 
 .btn_container button {
     width: 340px;
+    max-width: 100%;
     background-color: #F5F7FB; 
     color: black; 
     border: none;
 }
-.btn_container button:hover {
-    box-shadow: 0 0 20px rgba(0,0,0,.3);
-    transition: all .2s ease-in-out;
-}
-/*.container {
-    
-}
-
-#activities {
-    display: flex;
-}
-
-.img_container{
-    width: 285px;
-    height: 285px;
-}
-.btn_container {
-    
-}*/
 
 
-
-#activities-boxes {
+/*#activities-boxes {
     margin: 0 0.875em;
     display: flex;
     justify-content: space-evenly;
@@ -182,7 +173,7 @@ pointer-events: none;
 
 #activities-boxes img {
     /*margin-right: 20px;
-    margin-left: 20px;*/
+    margin-left: 20px;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -190,10 +181,8 @@ pointer-events: none;
     width: 320px;
     height: 320px;
     
-}
-#activities-boxes {
+}*/
 
-}
 
 
 
@@ -280,7 +269,7 @@ td {
     top: 170%;
 }
 
-/*news*/
+/*news
 .container {
     width: 100%;
     padding-right: 10px;
@@ -288,9 +277,9 @@ td {
     margin-right: auto;
     margin-left: auto
 }
+*/
 
-
-.articleTile {
+/*.articleTile {
     font-size: 1rem;
     height: 100%;
     position: relative;
@@ -338,10 +327,10 @@ td {
     font-size: .875em;
     margin-top: 1rem;
     line-height: 1.8571
-}
+}*/
 
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .articleTile_image {
         padding-bottom:37.6471%
     }
@@ -363,4 +352,71 @@ td {
     .articleTile_excerpt {
         margin-top: 1.5rem
     }
+}*/
+
+/* partners */
+#partners .m-heading{
+    margin-top: 50px;
+}
+#partners .partners-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#footer {
+    display: block;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+}
+.footer_logo {
+  
+}
+#footer img {
+    display: flex;
+    position: relative;
+    left: 10%;
+    top: 20;
+    max-width: 100%;
+}
+.footer_col{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    width: 500px;
+    position: relative;
+    left: 130px;
+    top: 0;
+}
+#footer p {
+    font-size: 16px;
+    font-weight: 600;
+}
+.footer_mainCol{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.footer_grid{
+    display: flex;
+}
+.container.footer {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer_bottom {
+    background-color: #fff;
+    color: black;
+    width: 100%;
+    padding: 1.5rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
 }
