@@ -4,6 +4,16 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+@media (min-width: 768px) {
+    #menu-toggle {
+      display: none;
+    }
+}
+@media (max-width: 768px) {
+    #info .info-img img {
+      display: none;
+    }
+}
 body {
     font-family: 'Agbalumo', system-ui;
     font-family: 'Montserrat', sans-serif;
@@ -49,6 +59,7 @@ h3 {
     font-weight: 600;
     border-color: black;
     border-width: 1px;
+    cursor: pointer;
 }
 /*.btn-more:hover {
     box-shadow: 2px 4px 4px  rgba(0, 0, 0, 0.2);
@@ -137,14 +148,20 @@ pointer-events: none;
 }
 /* activities*/
 #activities {
+    padding-right: 20px;
+    padding-left: 20px;
     margin-top: 18px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    justify-content: space-between;
+    justify-content: center;
+    
 }
+
 .container {
     text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 .img_container {
     margin-bottom: 18px;
@@ -292,7 +309,7 @@ td {
     display: flex;
     position: relative;
     left: 10%;
-    top: 20;
+    top: 40;
     max-width: 100%;
 }
 .footer_col{
@@ -302,9 +319,10 @@ td {
     position: relative;
     left: 130px;
     top: 0;
+    margin-left: 40px;
 }
 .footer_content {
-    
+    padding-bottom: 40px;
 }
 #footer p {
     font-size: 16px;
@@ -324,7 +342,7 @@ td {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
-    padding-bottom: 10px;
+    
     margin-right: auto;
     margin-left: auto;
 }

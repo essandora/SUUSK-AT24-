@@ -1,0 +1,86 @@
+#navbar {
+    
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  / Media query for mobile view /
+@media (max-width: 767px) {
+  .desktop-nav {
+    display: none;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  #menu-toggle:checked + .hamburger-menu ~ .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: black;}
+    .mobile-nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+      }
+    
+      / Show the hamburger menu icon in desktop view only when screen width is below 767px */
+      @media (max-width: 767px) {
+        .hamburger-menu {
+          display: flex;
+        }
+    }
+}
+
+
+/* showcase */
+@media (min-width: 500px) {
+    
+}
+
+
+
+@media (max-width: 767px) {
+    .desktop-image {
+      display: none;
+    }
+  
+    .main-heading {
+      /* Mobile view styles */
+      font-size: 24px;
+      color: #fff; /* Adjust color as needed */
+      text-align: left;
+      margin-top: 10px;
+    }
+  
+    /* Show a rectangle or any other content in place of the image in mobile view */
+    .mobile-placeholder {
+      display: block;
+      width: 100%; /* Set the width of the rectangle as needed */
+      height: 200px; /* Set the height of the rectangle as needed */
+      background-color: #20C4F4; /* Set the background color as needed */
+    }
+    .footer_col {
+        
+    }
+  }

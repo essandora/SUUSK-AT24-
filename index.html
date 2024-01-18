@@ -2,12 +2,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>XXIX Baltic Games for Vocational Schools</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylemobile.css" media="screen and (max-width: 500px)">
 </head>
 <body>
     <!-- navbar -->
@@ -16,12 +19,17 @@
             <img src="img/logoplain.png">
             <p>XXIX Baltic games<br>for Vocational Schools</p>
         </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </label>
         <ul>
             <li><a href="#showcase">Baltic games</a></li>
             <li><a href="#activities">Activities</a></li>
             <li><a href="#schedule">Schedule</a></li>
             <li><a href="#info">For players</a></li>
-            <li><a href="#news">News</a></li>
         </ul>
     </nav>
     <!-- showcase -->
@@ -77,6 +85,7 @@
 
 
     <!--schedule-->
+    
     <section id="schedule">
         <h1 class="m-heading">Schedule</h1>
         <div class="dataTable">
@@ -167,6 +176,11 @@
                 <a href="Juhend_Balti Mängud Kutsekoolidele 2024 - 2026.pdf" class="btn btn-primary" target="_blank">Read Guidebook</a>
             </div>
         </div>
+        <div class="container">
+            <div class="mobile-placeholder">
+                <div class="info-text"></div>
+            </div>
+          </div>
     </section>
 
     <!--news-->
